@@ -1,0 +1,593 @@
+@media only screen and (max-width: 768px) {
+
+
+    .mobile-menu-toggle {
+        display: block;
+    }
+    
+    .mobile-menu {
+        display: none;
+        width: 100%;
+    }
+    
+    .mobile-menu ul {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+    }
+    
+    .mobile-menu li {
+        width: 100%;
+        text-align: center;
+        margin: 5px 0;
+    }
+    
+    /* Banner */
+    .mainBanner h1 {
+        font-size: 50px;
+    }
+    
+    .mainBanner p {
+        font-size: 20px;
+    }
+    
+    /* About Us */
+    .aboutUs {
+        margin: 20px;
+    }
+    
+    /* Music Section */
+    .meditation {
+        padding: 10px;
+    }
+    
+    .music-div {
+        width: 45%;
+        height: 120px;
+        padding: 8px;
+        margin: 5px;
+    }
+    
+    /* Yoga Table */
+    .container {
+        margin: 10px;
+    }
+    
+    table {
+        font-size: 14px;
+    }
+    
+    td {
+        padding: 8px 5px;
+    }
+    
+    /* Podcast Cards */
+    .podcast-section {
+        padding: 15px;
+    }
+    
+    .podcast-card {
+        width: 100%;
+    }
+    
+    /* Contact Section */
+    #contact {
+        padding: 30px 20px;
+    }
+    
+    /* Affirmation Slides */
+    .mySlides img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    
+    /* Banner */
+    .mainBanner h1 {
+        font-size: 36px;
+    }
+    
+    .mainBanner p {
+        font-size: 18px;
+    }
+    
+    /* Music Section */
+    .music-div {
+        width: 100%;
+    }
+    
+    /* Yoga Table */
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+    
+    /* Popup */
+    .popup-inner {
+        width: 95vw;
+        padding: 20px;
+    }
+}
+
+#fullscreenPopup button {
+    min-width: 100px;
+    min-height: 44px; 
+}
+
+a {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Mobile Menu Styles */
+.mobile-menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #eee;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    margin-right: 15px;
+}
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #f2f1ee;
+    overflow-x: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    gap:100px;
+}
+
+
+/* Logo */
+.logo {
+    margin-top: 20px;
+    background-color: rgba(134, 90, 108,0.7);
+    border-radius: 0px 500px 500px 0px;
+    display: flex;
+    align-items: center;
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: #eee;
+    flex: 1;
+    max-width: 200px;
+}
+.logo:hover{
+    background-color: #865a6c;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin-right: 400px;
+    padding: 10px 30px; 
+    background-color: rgba(134, 90, 108,0.5); 
+    border-radius: 30px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); 
+    flex: 2;
+    justify-content: center;
+}
+nav ul:hover{
+    background-color: #865a6c;
+}
+
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgba(238, 238, 238);
+    transition: all 0.3s ease;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 5px; 
+    border-radius: 50px; 
+}
+nav ul li a:hover {
+    color:#fff;
+}
+
+/* Top Bar */
+.top-bar {
+    display: flex;
+    align-items: center;
+}
+
+/* Banner Section */
+.mainBanner {
+    height: 100vh;
+    background: url('https://images.unsplash.com/photo-1594882471743-2758d2ce5f00?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.banner-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainBanner h1 {
+    font-size: 100px;
+    color: #eee;
+    transition: color 0.3s ease;
+}
+
+.mainBanner p{
+    font-size: 30px;
+    color: #eee;
+    transition: color 0.3s ease;
+}
+
+
+/* About Us Section */
+.aboutUs {
+    margin: 30px 70px;
+    text-align: justify;
+    justify-content: center;
+    color: #1f1f1f;
+}
+.aboutUs h1{
+    color: #3a2e2e;
+}
+.aboutUs em{
+    color:#865a6c;
+}
+
+/* Ripple Effect */
+.ripple {
+    position: absolute;
+    border-radius: 50%;
+    transform: scale(0);
+    animation: ripple-animation 0.6s linear;
+    background: rgba(235, 235, 235, 0.5);
+    pointer-events: none;
+}
+
+@keyframes ripple-animation {
+    to {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+
+.meditation {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  padding: 20px 70px;
+  margin-bottom: 30px;
+}
+
+
+.music-div {
+  width: 200px;
+  height: 150px;
+  padding: 12px 24px;
+  margin: 10px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  user-select: none;
+}
+
+.music-div.even {
+  background-color: #a8b2a1;
+  color: #264e36;
+}
+
+.music-div.odd {
+  background-color: #264e36;
+  color: #a8b2a1;
+}
+
+.music-div.even:hover {
+  background-color: #264e36;
+  color: #a8b2a1;
+  transform: scale(1.05);
+}
+
+.music-div.odd:hover {
+  color:#264e36;
+  background-color: #a8b2a1;
+  transform: scale(1.05);
+}
+
+.music-div:active {
+    transform: scale(0.98);
+}
+
+
+#fullscreenPopup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(250, 211, 224, 0.95);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  flex-direction: column;
+  text-align: center;
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.popup-inner {
+  color: #5B3758;
+  font-family: 'Arial', sans-serif;
+}
+
+#fullscreenPopup button {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #865a6c;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+#fullscreenPopup button:hover {
+  background-color: #6d4759;
+}
+
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(10px);
+  background-color: rgba(55, 105, 39, 0.2); /* subtle tint */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.popup-inner {
+  width: 80vw;
+  max-width: 600px;
+  background: #f7f3f0;
+  padding: 40px;
+  border-radius: 30px;
+  text-align: center;
+  color: #5B3758;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+.popup-inner h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.popup-inner button {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #865a6c;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.popup-inner button:hover {
+  background-color: #6d4759;
+}
+.popup-img {
+  width: 100%;
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+@keyframes fadeIn {
+  from { transform: scale(0.9); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.track-img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
+
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+.container{
+    margin: 20px 100px;
+}
+.container h1 {
+    margin-bottom: 20px;
+    color: #3a2e2e;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+td {
+    padding: 14px 10px;
+    border-bottom: 1px solid #ddd;
+}
+td a {
+    font-weight: bold;
+    color: #5b3758;
+    text-decoration: none;
+}
+td a:hover {
+    text-decoration: underline;
+}
+
+.podcast-section {
+  padding: 30px 70px;
+  text-align: center;
+}
+
+.podcast-section h2 {
+  color: #5B3758;
+  margin-bottom: 30px;
+}
+
+.podcast-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.podcast-card {
+  width: 280px;
+  padding: 20px;
+  border-radius: 15px;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.podcast-card.even {
+  background-color: #a8b2a1;
+  color: #264e36;
+}
+
+.podcast-card.odd {
+  background-color: #264e36;
+  color: #a8b2a1;
+}
+
+.podcast-card a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.podcast-card:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+
+#contact {
+  background-color: #264e36;
+  color: #f2f1ee;
+  padding: 50px 70px;
+  border-radius: 40px 40px 0px 0px;
+  text-align: center;
+}
+
+#contact h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #f7f3f0;
+}
+
+#contact p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.contact-details p {
+  margin: 8px 0;
+  font-size: 1rem;
+}
+
+.contact-details i {
+  margin-right: 10px;
+  color: #a8b2a1;
+}
+
+.contact-details a {
+  color: #a8b2a1;
+  text-decoration: none;
+}
+
+.contact-details a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  margin-top: 30px;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
